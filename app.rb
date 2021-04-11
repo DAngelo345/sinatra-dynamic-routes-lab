@@ -12,6 +12,8 @@ class App < Sinatra::Base
     v = params[:number]
   
     v ** 2
+    resp.status = 200
+    resp.finish
   end
 
 end
